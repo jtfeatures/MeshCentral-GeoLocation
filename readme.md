@@ -1,19 +1,33 @@
-# MeshCentral-Sample
+# MeshCentral-GeoLocation
 
-*Released: 2019-11-23*
+*Released: 2025-11-13*
 
-Sample plugin for the [MeshCentral2](https://github.com/Ylianst/MeshCentral) Project.
+MeshCentral plugin to add GeoLocation
 
 ## Installation
 
  Pre-requisite: First, make sure you have plugins enabled for your MeshCentral installation:
->     "plugins": {
->          "enabled": true
->     },
+   {
+     "settings": {
+       "plugins": {
+         "enabled": true
+       }
+     },
+     "domains": {
+       "": {
+         "plugins": {
+           "geolocation": {
+             "enabled": true
+           }
+         }
+       }
+     }
+   }
+
 Restart your MeshCentral server after making this change.
 
  To install, simply add the plugin configuration URL when prompted:
- `https://raw.githubusercontent.com/ryanblenis/MeshCentral-Sample/master/config.json`
+ `https://raw.githubusercontent.com/jtfeatures/MeshCentral-GeoLocation/master/config.json`
 
 ## Features
-Upon disconnecting from a remote desktop session, the user will be prompted to enter a note.
+Auto adds the location data every XX minutes.
