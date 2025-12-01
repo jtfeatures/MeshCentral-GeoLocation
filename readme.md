@@ -31,3 +31,5 @@ Restart your MeshCentral server after making this change.
 
 ## Features
 Auto adds the location data every XX minutes.
+
+This Plugin is in testing and has NO guarantee it is functional.
